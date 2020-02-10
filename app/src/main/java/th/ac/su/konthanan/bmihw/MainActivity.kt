@@ -10,6 +10,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import kotlin.math.roundToInt
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,8 +18,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var tvResult    = findViewById<TextView>(R.id.tvResult)
-        var tvResult2 = findViewById<TextView>(R.id.tvResult2)
+        var tvBmi    = findViewById<TextView>(R.id.tvResult)
+        var tvResult = findViewById<TextView>(R.id.tvResult2)
 
         var edtHeight = findViewById<EditText>(R.id.edtH)
         var edtWeight = findViewById<EditText>(R.id.edtW)
@@ -76,4 +77,5 @@ class MainActivity : AppCompatActivity() {
     }
 
 }
+
 
